@@ -11,3 +11,45 @@ If there are fewer than k characters left, reverse all of them. If there are les
 **Output:**
 
 "bacdfeg"*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    string reverseStr(string s, int k) {
+        string finalresult = "";
+        if(s.length()<k)
+        {
+            reverse(s.begin(),s.end());
+            return s;
+        }
+        else
+        { 
+        for(int i=0; i<s.length(); i=i+(2*k))
+        {
+            if(s.length()-i<k)
+            {
+                string half = s.substr(i,k);
+                reverse(half.begin(),half.end());
+                finalresult += half;
+            }
+            else if(s.length()-i>=k)
+            {
+                string half = s.substr(i,k);
+                string remain = s.substr(k+i,k);
+                reverse(half.begin(),half.end());
+                string result = half + remain;
+                finalresult += result;
+            }
+        }
+        return finalresult;
+        }
+    }
+};
+
+int main()
+{
+
+return 0;
+}
