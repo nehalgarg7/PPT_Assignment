@@ -1,0 +1,60 @@
+.conatiner{
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr;
+    gap: 4px;
+}
+.container1,.conatiner2,.container3{
+    display: inline-flex;
+}
+.group2,.group13,.group14,.group15,.group16,.group17{
+    margin-top: 42px;
+}
+.conatiner2{
+    margin-top: 126px;
+}
+.group66{
+    display: grid;
+    grid-template-columns:repeat(14,0fr)
+}
+.group67{
+    display: grid;
+    grid-template-columns:repeat(14,0fr);
+}
+.container4{
+    margin-left: 92px;
+}
+.alkali-metals,.alkaline-earth-metals{
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    display: block;
+    background-color: rgb(255, 111, 135);
+    margin: 2px;
+}
+
+.transition-metals{
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    display: block;
+    background-color: rgb(126, 193, 255);
+    margin: 2px;
+}
+
+.non-metals,.halogens,.noble-gas{
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    display: block;
+    background-color: rgb(255, 245, 112);
+    margin: 2px;
+}
+
+.lanthanoid-series,.actinoid-series{
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    display: block;
+    background-color: rgb(47, 255, 50);
+    margin: 2px;
+}
