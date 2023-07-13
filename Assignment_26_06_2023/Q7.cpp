@@ -9,3 +9,34 @@ Given an integer array nums, return true if the given array is monotonic, or fal
 Example 1:
 Input: nums = [1,2,2,3]
 Output: true*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    bool isMonotonic(vector<int>& nums) {
+        int size = nums.size();
+        bool inc = true;
+        bool dec = true;
+        for (int i = 0; i < size- 1; i++) {
+            if (nums[i] > nums[i + 1]) {
+                inc = false;
+            }
+        }
+
+        for (int i = 0; i < size - 1; i++) {
+
+            if (nums[i] < nums[i + 1]) {
+                dec = false;
+            }
+        }
+        return inc || dec;
+    }
+};
+
+int main()
+{
+
+    return 0;
+}
